@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "//alxmrd.github.io/react-cv/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "//alxmrd.github.io/react-cv/static/js/main.6703f8c3.chunk.js",
+    "main.js.map": "//alxmrd.github.io/react-cv/static/js/main.6703f8c3.chunk.js.map",
+    "runtime-main.js": "//alxmrd.github.io/react-cv/static/js/runtime-main.3f7ca9dd.js",
+    "runtime-main.js.map": "//alxmrd.github.io/react-cv/static/js/runtime-main.3f7ca9dd.js.map",
+    "static/js/2.29832a87.chunk.js": "//alxmrd.github.io/react-cv/static/js/2.29832a87.chunk.js",
+    "static/js/2.29832a87.chunk.js.map": "//alxmrd.github.io/react-cv/static/js/2.29832a87.chunk.js.map",
+    "index.html": "//alxmrd.github.io/react-cv/index.html",
+    "precache-manifest.700f8e261881f72c447c831b7a143e87.js": "//alxmrd.github.io/react-cv/precache-manifest.700f8e261881f72c447c831b7a143e87.js",
+    "service-worker.js": "//alxmrd.github.io/react-cv/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "//alxmrd.github.io/react-cv/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.29832a87.chunk.js.LICENSE.txt": "//alxmrd.github.io/react-cv/static/js/2.29832a87.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f7ca9dd.js",
+    "static/js/2.29832a87.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.6703f8c3.chunk.js"
+  ]
+}
