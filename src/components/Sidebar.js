@@ -9,6 +9,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import MyAvatar from "./MyAvatar.js";
+import Typography from "@material-ui/core/Typography";
+
 const drawerWidth = "35%";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,6 +39,9 @@ export default function Sidebar() {
     >
       <Divider />
       <MyAvatar />
+      <Typography fontStyle="bold " variant="h6" align="center">
+        Nice to have you here!
+      </Typography>
       <Divider />
       <List>
         {["All mail", "Trash", "Spam"].map((text, index) => (

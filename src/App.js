@@ -7,6 +7,7 @@ import ReactToPrint from "react-to-print";
 import PrintIcon from "@material-ui/icons/Print";
 import Fab from "@material-ui/core/Fab";
 import Tooltip from "@material-ui/core/Tooltip";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -17,27 +18,41 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(3),
   },
 }));
-
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#435E77",
+    },
+    secondary: {
+      main: "#e64a19",
+    },
+  },
+  typography: {
+    fontFamily: "Courier New, Courier, monospace",
+  },
+});
 function App() {
   const classes = useStyles();
   const componentRef = useRef();
   return (
     <div className={classes.root} ref={componentRef}>
       <CssBaseline />
-      <Sidebar />
-      <Main />
-      <ReactToPrint
-        trigger={() => (
-          <div>
-            <Tooltip title="Print" aria-label="Print">
-              <Fab color="secondary" className={classes.absolute}>
-                <PrintIcon />
-              </Fab>
-            </Tooltip>
-          </div>
-        )}
-        content={() => componentRef.current}
-      />
+      <MuiThemeProvider theme={theme}>
+        <Sidebar />
+        <Main />
+        <ReactToPrint
+          trigger={() => (
+            <div>
+              <Tooltip title="Print" aria-label="Print">
+                <Fab color="secondary" className={classes.absolute}>
+                  <PrintIcon />
+                </Fab>
+              </Tooltip>
+            </div>
+          )}
+          content={() => componentRef.current}
+        />
+      </MuiThemeProvider>
     </div>
   );
 }

@@ -10,12 +10,15 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
     justifyContent: "center",
+    marginTop: "20px",
+    marginBottom: "20px",
   },
 
   large: {
     width: "70%",
     height: "90%",
     margin: "10px",
+    border: `5px solid ${theme.palette.background.paper}`,
   },
 }));
 
@@ -24,7 +27,7 @@ export default function MyAvatar() {
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Remy Sharp" src={avatar} className={classes.large} />
+      <Avatar alt="Profil" src={avatar} className={classes.large} />
     </div>
   );
 }
