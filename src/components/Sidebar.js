@@ -8,7 +8,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-
+import MyAvatar from "./MyAvatar.js";
 const drawerWidth = "35%";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,13 +18,8 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-  },
-  // necessary for content to be below app bar
-
-  content: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
+    background:
+      "linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(74,74,74,1) 66%, rgba(166,166,166,1) 100%)",
   },
 }));
 
@@ -40,18 +35,8 @@ export default function Sidebar() {
       }}
       anchor="left"
     >
-      <div className={classes.toolbar} />
       <Divider />
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+      <MyAvatar />
       <Divider />
       <List>
         {["All mail", "Trash", "Spam"].map((text, index) => (
