@@ -1,11 +1,11 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-
+import Title from "./Title.js";
 const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: "transparent",
     padding: theme.spacing(3),
   },
 }));
@@ -14,6 +14,7 @@ export default function Main() {
   const classes = useStyles();
   return (
     <main className={classes.content}>
+      <Title />
       <Typography paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus

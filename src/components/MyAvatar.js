@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   large: {
-    width: "70%",
-    height: "90%",
+    width: "60%",
+    height: "80%",
     margin: "10px",
     border: `5px solid ${theme.palette.background.paper}`,
   },
